@@ -1,13 +1,6 @@
-
-import React from 'react'
-import styled from 'styled-components'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import { education, experiences } from '../../data/constants';
+import React from 'react';
+import styled from 'styled-components';
+import { education } from '../../data/constants'; // Assuming education data is imported
 import EducationCard from '../Cards/EducationCard';
 
 const Container = styled.div`
@@ -39,15 +32,15 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: ${({ theme }) => theme.text_primary};
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        font-size: 32px;
+    }
 `;
 
 const Desc = styled.div`
@@ -61,7 +54,7 @@ const Desc = styled.div`
     }
 `;
 
-const TimelineSection = styled.div`
+const EducationSection = styled.div`
     width: 100%;
     max-width: 1000px;
     margin-top: 10px;
@@ -75,35 +68,20 @@ const TimelineSection = styled.div`
     }
 `;
 
-
-
-const index = () => {
+const Index = () => {
     return (
         <Container id="education">
             <Wrapper>
                 <Title>Education</Title>
-                <Desc>
-                    My educational details are as follows.
-                </Desc>
-                <TimelineSection>
-                    <Timeline>
-                        {education.map((education,index) => (
-                            <TimelineItem >
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <EducationCard education={education}/>
-                                </TimelineContent>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
-                                </TimelineSeparator>
-                            </TimelineItem>
-                        ))}
-                    </Timeline>
-
-                </TimelineSection>
+                <Desc>My educational details are as follows.</Desc>
+                <EducationSection>
+                    {education.map((education, index) => (
+                        <EducationCard key={index} education={education} />
+                    ))}
+                </EducationSection>
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
-export default index
+export default Index;

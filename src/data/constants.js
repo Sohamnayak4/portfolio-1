@@ -111,11 +111,6 @@ export const Bio = {
             "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
         },
         {
-          name: "Adobe XD",
-          image:
-            "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-        },
-        {
           name: "Figma",
           image:
             "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
@@ -125,12 +120,29 @@ export const Bio = {
   ];
   
   export const experiences = [
-    
+    {
+      id: 0,
+      img: "https://images.squarespace-cdn.com/content/v1/5d252cc64f9ce3000110f184/a044e3a9-891b-4fad-a4e4-fe68b68cc34f/termslarge.png?format=1500w",
+      role: "Freelance Web Developer",
+      company: "Self Employed",
+      date: "May 2024 - Present",
+      desc: "I am a freelance web developer, working on various projects to enhance my skills and gain experience.",
+      skills: [
+        "React Js",
+        "Node Js",
+        "MongoDB",
+        "Express Js",
+        "Firebase",
+        "HTML",
+        "CSS",
+        "JavaScript",       
+      ]
+    },
   ];
   
   export const education = [
     {
-      id: 2,
+      id: 0,
       img: "https://www.pngkey.com/png/detail/50-506039_iit-bombay-logo-png.png",
       school: "Indian Institute of Technology, Bombay",
       date: "Oct 2022 - Present",
@@ -141,5 +153,17 @@ export const Bio = {
   ];
   
   export const projects = [
-    
+    {
+      id: 0,
+      title: "Real-Estate Platform",
+      date: "May 2024",
+      description:
+        "A real estate platform where users can buy, sell and rent properties. Users can also post their properties for sale or rent.",
+      image:
+        "https://private-user-images.githubusercontent.com/138654085/340068990-208e5f3b-d9cb-4470-bef6-c298015cab32.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg1MTg5NzUsIm5iZiI6MTcxODUxODY3NSwicGF0aCI6Ii8xMzg2NTQwODUvMzQwMDY4OTkwLTIwOGU1ZjNiLWQ5Y2ItNDQ3MC1iZWY2LWMyOTgwMTVjYWIzMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYxNlQwNjE3NTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ZDFiZjllNTUxZDMyYzJjMDc4ZWI3MDhjZjY5YTM4YmRlYzU3MjdiMjVjODY5MDNiZGVlNzA2MjEyYWU4NjUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.f7DS3CzCKQ7ctmBZq_9Igh8k-eA7LANhRpf0gxEPx-U",
+      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+      category: "web app",
+      github: "https://github.com/Sohamnayak4/Real-Estate-Platform",
+      webapp: "",
+    }
   ];
